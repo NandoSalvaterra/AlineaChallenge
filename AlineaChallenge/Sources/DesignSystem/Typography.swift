@@ -30,7 +30,6 @@ extension View {
         self
             .font(.flexaCondensedMedium(size: Font.Size.amountDisplay))
             .tracking(Font.Size.amountDisplay * -0.02)
-            .foregroundStyle(Color.primaryText)
     }
 
     func keypadKeyStyle() -> some View {
