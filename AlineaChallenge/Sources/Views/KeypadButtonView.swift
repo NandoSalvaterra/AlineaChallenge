@@ -6,13 +6,19 @@ struct KeypadButtonView: View {
     let expandsHorizontally: Bool
     let onTap: () -> Void
 
+    @State private var tapTrigger = false
+
     var body: some View {
-        Button(action: onTap) {
+        Button(action: {
+            tapTrigger.toggle()
+            onTap()
+        }) {
             content
                 .frame(maxWidth: expandsHorizontally ? .infinity : nil)
                 .opacity(isEnabled ? 1 : 0.3)
         }
         .disabled(!isEnabled)
+        .sensoryFeedback(.impact(weight: .light), trigger: tapTrigger)
     }
 
     @ViewBuilder
