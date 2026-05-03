@@ -7,6 +7,10 @@ extension Font {
         .custom("GTFlexa-CnMd", size: size)
     }
 
+    static func flexaBold(size: CGFloat) -> Font {
+        .custom("GTFlexaTrialVF-Bold", size: size)
+    }
+
     static func instrumentSansSemiCondensedMedium(size: CGFloat) -> Font {
         .custom("InstrumentSansSemiCondensed-Medium", size: size)
     }
@@ -20,6 +24,7 @@ extension Font {
         static let keypadKey: CGFloat = 36
         static let reviewButton: CGFloat = 21
         static let suggestionBubble: CGFloat = 17
+        static let automatedBadge: CGFloat = 12
     }
 }
 
@@ -49,6 +54,13 @@ extension View {
         self
             .font(.instrumentSansSemiCondensedMedium(size: Font.Size.suggestionBubble))
             .tracking(Font.Size.suggestionBubble * -0.01)
+            .foregroundStyle(Color.primaryText)
+    }
+
+    func automatedBadgeTextStyle() -> some View {
+        self
+            .font(.flexaBold(size: Font.Size.automatedBadge))
+            .tracking(Font.Size.automatedBadge * 0.05)
             .foregroundStyle(Color.primaryText)
     }
 }

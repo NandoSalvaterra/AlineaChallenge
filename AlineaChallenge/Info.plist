@@ -4,6 +4,7 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>GT-Flexa-Trial-VF.ttf</string>
 		<string>GTFlexa-CnMd.otf</string>
 		<string>InstrumentSansSemiCondensed-Medium.otf</string>
 	</array>
