@@ -17,8 +17,8 @@ extension Font {
 extension Font {
     enum Size {
         static let amountDisplay: CGFloat = 100
-        static let keypadKey: CGFloat = 36.65
-        static let reviewButton: CGFloat = 21.27
+        static let keypadKey: CGFloat = 36
+        static let reviewButton: CGFloat = 21
         static let suggestionBubble: CGFloat = 17
     }
 }
@@ -30,14 +30,14 @@ extension View {
         self
             .font(.flexaCondensedMedium(size: Font.Size.amountDisplay))
             .tracking(Font.Size.amountDisplay * -0.02)
-            .foregroundStyle(.primaryText)
+            .foregroundStyle(Color.primaryText)
     }
 
     func keypadKeyStyle() -> some View {
         self
             .font(.system(size: Font.Size.keypadKey, weight: .medium))
             .tracking(Font.Size.keypadKey * -0.03)
-            .foregroundStyle(.primaryText)
+            .foregroundStyle(Color.primaryText)
     }
 
     func reviewButtonTextStyle() -> some View {
@@ -50,6 +50,6 @@ extension View {
         self
             .font(.instrumentSansSemiCondensedMedium(size: Font.Size.suggestionBubble))
             .tracking(Font.Size.suggestionBubble * -0.01)
-            .foregroundStyle(.primaryText)
+            .foregroundStyle(Color.primaryText)
     }
 }

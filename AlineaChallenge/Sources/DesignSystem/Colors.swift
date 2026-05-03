@@ -5,8 +5,8 @@ import SwiftUI
 extension Color {
     static let primaryText = Color.white
     static let placeholderText = Color.white.opacity(0.4)
-    static let appBackground = Color(.appBackground)
-    static let suggestionBubble = Color(.suggestionBubble).opacity(0.75)
+    static let background = Color(.appBackground)
+    static let bubble = Color(.suggestionBubble).opacity(0.75)
 }
 
 // MARK: - Gradients
