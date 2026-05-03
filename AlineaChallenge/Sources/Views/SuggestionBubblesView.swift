@@ -8,12 +8,12 @@ struct SuggestionBubblesView: View {
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
         formatter.locale = .current
+        formatter.maximumFractionDigits = 0
         return formatter
     }()
 
     private let bubbleSpacing: CGFloat = 12
-    private let horizontalPadding: CGFloat = 20
-    private let verticalPadding: CGFloat = 12
+    private let bubbleHeight: CGFloat = 44
 
     var body: some View {
         HStack(spacing: bubbleSpacing) {
@@ -31,8 +31,7 @@ struct SuggestionBubblesView: View {
                 .suggestionBubbleTextStyle()
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
-                .padding(.horizontal, horizontalPadding)
-                .padding(.vertical, verticalPadding)
+                .frame(maxWidth: .infinity, minHeight: bubbleHeight)
         }
         .glassEffect(.regular.tint(Color.bubble), in: .capsule)
     }
