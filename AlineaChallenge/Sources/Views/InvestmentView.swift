@@ -22,7 +22,6 @@ struct InvestmentView: View {
                     Spacer()
 
                     AmountDisplayView(displayValue: viewModel.displayValue, isEmpty: viewModel.isEmpty)
-                        .transaction { $0.animation = nil }
                         .padding(.horizontal, horizontalContentPadding)
 
                     Spacer()

@@ -17,6 +17,7 @@ struct AmountDisplayView: View {
                 .lineLimit(1)
                 .minimumScaleFactor(0.3)
                 .accessibilityIdentifier(AccessibilityID.amountDisplay)
+                .transaction { $0.animation = nil }
             
             Rectangle()
                 .fill(Color.primaryText)
