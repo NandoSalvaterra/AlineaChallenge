@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct InvestmentView: View {
-    @State private var hasValue = false
+    @State private var viewModel = InvestmentViewModel()
 
     private enum ViewID { case review, bubbles }
 
@@ -21,21 +21,21 @@ struct InvestmentView: View {
                 VStack(spacing: 0) {
                     Spacer()
 
-                    AmountDisplayView(displayValue: "$0", isEmpty: true)
+                    AmountDisplayView(displayValue: viewModel.displayValue, isEmpty: viewModel.isEmpty)
                         .padding(.horizontal, horizontalContentPadding)
 
                     Spacer()
 
                     Group {
-                        if hasValue {
+                        if viewModel.hasValue {
                             ReviewButtonView(onTap: {
-                                withAnimation(Self.transitionAnimation) { hasValue = false }
+                                withAnimation(Self.transitionAnimation) { }
                             })
                             .id(ViewID.review)
                             .transition(Self.switchTransition)
                         } else {
-                            SuggestionBubblesView(suggestions: [500, 2_000, 10_000], onSelect: { _ in
-                                withAnimation(Self.transitionAnimation) { hasValue = true }
+                            SuggestionBubblesView(suggestions: viewModel.suggestions, onSelect: { value in
+                                withAnimation(Self.transitionAnimation) { viewModel.selectSuggestion(value) }
                             })
                             .id(ViewID.bubbles)
                             .transition(Self.switchTransition)
@@ -43,7 +43,7 @@ struct InvestmentView: View {
                     }
                     .padding(.horizontal, horizontalContentPadding)
 
-                    KeypadView(isDecimalDisabled: false, onKeyTap: { _ in })
+                    KeypadView(isDecimalDisabled: viewModel.isDecimalDisabled, onKeyTap: { viewModel.keyTapped($0) })
                         .padding(.top, keypadTopSpacing)
                         .padding(.horizontal, keypadHorizontalPadding)
                         .padding(.bottom, keypadBottomPadding)
