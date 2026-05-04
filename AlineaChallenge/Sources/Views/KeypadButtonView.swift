@@ -19,6 +19,7 @@ struct KeypadButtonView: View {
         }
         .disabled(!isEnabled)
         .sensoryFeedback(.impact(weight: .light), trigger: tapTrigger)
+        .accessibilityIdentifier(key.accessibilityID)
     }
 
     @ViewBuilder

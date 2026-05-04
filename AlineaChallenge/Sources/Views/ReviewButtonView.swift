@@ -51,6 +51,7 @@ struct ReviewButtonView: View {
                 .foregroundStyle(Color.background)
                 .frame(maxWidth: .infinity, minHeight: height)
         }
+        .accessibilityIdentifier(AccessibilityID.reviewButton)
         .background(.white, in: .capsule)
         .overlay {
             Capsule()

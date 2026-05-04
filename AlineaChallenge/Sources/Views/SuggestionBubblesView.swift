@@ -34,6 +34,7 @@ struct SuggestionBubblesView: View {
                 .frame(maxWidth: .infinity, minHeight: bubbleHeight)
         }
         .glassEffect(.regular.tint(Color.bubble), in: .capsule)
+        .accessibilityIdentifier(AccessibilityID.suggestion(value))
     }
 }
 

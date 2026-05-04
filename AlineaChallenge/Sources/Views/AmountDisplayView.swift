@@ -16,6 +16,7 @@ struct AmountDisplayView: View {
                 .foregroundStyle(isEmpty ? Color.placeholderText : Color.primaryText)
                 .lineLimit(1)
                 .minimumScaleFactor(0.3)
+                .accessibilityIdentifier(AccessibilityID.amountDisplay)
 
             Rectangle()
                 .fill(Color.primaryText)

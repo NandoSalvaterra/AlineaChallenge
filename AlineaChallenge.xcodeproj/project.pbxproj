@@ -6,8 +6,27 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		5BAC05782FA81CD700E4DA03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B6ABCAA2FA41F1F001A24AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B6ABCB12FA41F1F001A24AA;
+			remoteInfo = AlineaChallenge;
+		};
+		5BAC05892FA81D1E00E4DA03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B6ABCAA2FA41F1F001A24AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B6ABCB12FA41F1F001A24AA;
+			remoteInfo = AlineaChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		5B6ABCB22FA41F1F001A24AA /* AlineaChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlineaChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BAC05742FA81CD700E4DA03 /* AlineaChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlineaChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BAC05832FA81D1E00E4DA03 /* AlineaChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlineaChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -29,10 +48,34 @@
 			path = AlineaChallenge;
 			sourceTree = "<group>";
 		};
+		5BAC05752FA81CD700E4DA03 /* AlineaChallengeTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AlineaChallengeTests;
+			sourceTree = "<group>";
+		};
+		5BAC05842FA81D1E00E4DA03 /* AlineaChallengeUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AlineaChallengeUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5B6ABCAF2FA41F1F001A24AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BAC05712FA81CD700E4DA03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BAC05802FA81D1E00E4DA03 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				5B6ABCB42FA41F1F001A24AA /* AlineaChallenge */,
+				5BAC05752FA81CD700E4DA03 /* AlineaChallengeTests */,
+				5BAC05842FA81D1E00E4DA03 /* AlineaChallengeUITests */,
 				5B6ABCB32FA41F1F001A24AA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				5B6ABCB22FA41F1F001A24AA /* AlineaChallenge.app */,
+				5BAC05742FA81CD700E4DA03 /* AlineaChallengeTests.xctest */,
+				5BAC05832FA81D1E00E4DA03 /* AlineaChallengeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +130,52 @@
 			productReference = 5B6ABCB22FA41F1F001A24AA /* AlineaChallenge.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5BAC05732FA81CD700E4DA03 /* AlineaChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BAC057A2FA81CD700E4DA03 /* Build configuration list for PBXNativeTarget "AlineaChallengeTests" */;
+			buildPhases = (
+				5BAC05702FA81CD700E4DA03 /* Sources */,
+				5BAC05712FA81CD700E4DA03 /* Frameworks */,
+				5BAC05722FA81CD700E4DA03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BAC05792FA81CD700E4DA03 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				5BAC05752FA81CD700E4DA03 /* AlineaChallengeTests */,
+			);
+			name = AlineaChallengeTests;
+			packageProductDependencies = (
+			);
+			productName = AlineaChallengeTests;
+			productReference = 5BAC05742FA81CD700E4DA03 /* AlineaChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5BAC05822FA81D1E00E4DA03 /* AlineaChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BAC058B2FA81D1E00E4DA03 /* Build configuration list for PBXNativeTarget "AlineaChallengeUITests" */;
+			buildPhases = (
+				5BAC057F2FA81D1E00E4DA03 /* Sources */,
+				5BAC05802FA81D1E00E4DA03 /* Frameworks */,
+				5BAC05812FA81D1E00E4DA03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BAC058A2FA81D1E00E4DA03 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				5BAC05842FA81D1E00E4DA03 /* AlineaChallengeUITests */,
+			);
+			name = AlineaChallengeUITests;
+			packageProductDependencies = (
+			);
+			productName = AlineaChallengeUITests;
+			productReference = 5BAC05832FA81D1E00E4DA03 /* AlineaChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +188,14 @@
 				TargetAttributes = {
 					5B6ABCB12FA41F1F001A24AA = {
 						CreatedOnToolsVersion = 26.2;
+					};
+					5BAC05732FA81CD700E4DA03 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 5B6ABCB12FA41F1F001A24AA;
+					};
+					5BAC05822FA81D1E00E4DA03 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 5B6ABCB12FA41F1F001A24AA;
 					};
 				};
 			};
@@ -113,12 +214,28 @@
 			projectRoot = "";
 			targets = (
 				5B6ABCB12FA41F1F001A24AA /* AlineaChallenge */,
+				5BAC05732FA81CD700E4DA03 /* AlineaChallengeTests */,
+				5BAC05822FA81D1E00E4DA03 /* AlineaChallengeUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5B6ABCB02FA41F1F001A24AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BAC05722FA81CD700E4DA03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BAC05812FA81D1E00E4DA03 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,7 +252,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5BAC05702FA81CD700E4DA03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BAC057F2FA81D1E00E4DA03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5BAC05792FA81CD700E4DA03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B6ABCB12FA41F1F001A24AA /* AlineaChallenge */;
+			targetProxy = 5BAC05782FA81CD700E4DA03 /* PBXContainerItemProxy */;
+		};
+		5BAC058A2FA81D1E00E4DA03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B6ABCB12FA41F1F001A24AA /* AlineaChallenge */;
+			targetProxy = 5BAC05892FA81D1E00E4DA03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		5B6ABCBB2FA41F21001A24AA /* Debug */ = {
@@ -327,6 +471,92 @@
 			};
 			name = Release;
 		};
+		5BAC057B2FA81CD700E4DA03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DWVQWGT337;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.salvaterratech.AlineaChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlineaChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AlineaChallenge";
+			};
+			name = Debug;
+		};
+		5BAC057C2FA81CD700E4DA03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DWVQWGT337;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.salvaterratech.AlineaChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlineaChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AlineaChallenge";
+			};
+			name = Release;
+		};
+		5BAC058C2FA81D1E00E4DA03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DWVQWGT337;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.salvaterratech.AlineaChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AlineaChallenge;
+			};
+			name = Debug;
+		};
+		5BAC058D2FA81D1E00E4DA03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DWVQWGT337;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.salvaterratech.AlineaChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AlineaChallenge;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -344,6 +574,24 @@
 			buildConfigurations = (
 				5B6ABCBE2FA41F21001A24AA /* Debug */,
 				5B6ABCBF2FA41F21001A24AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BAC057A2FA81CD700E4DA03 /* Build configuration list for PBXNativeTarget "AlineaChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BAC057B2FA81CD700E4DA03 /* Debug */,
+				5BAC057C2FA81CD700E4DA03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BAC058B2FA81D1E00E4DA03 /* Build configuration list for PBXNativeTarget "AlineaChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BAC058C2FA81D1E00E4DA03 /* Debug */,
+				5BAC058D2FA81D1E00E4DA03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
