@@ -22,6 +22,7 @@ struct InvestmentView: View {
                     Spacer()
 
                     AmountDisplayView(displayValue: viewModel.displayValue, isEmpty: viewModel.isEmpty)
+                        .transaction { $0.animation = nil }
                         .padding(.horizontal, horizontalContentPadding)
 
                     Spacer()
@@ -43,7 +44,9 @@ struct InvestmentView: View {
                     }
                     .padding(.horizontal, horizontalContentPadding)
 
-                    KeypadView(isDecimalDisabled: viewModel.isDecimalDisabled, onKeyTap: { viewModel.keyTapped($0) })
+                    KeypadView(isDecimalDisabled: viewModel.isDecimalDisabled, onKeyTap: { key in
+                        withAnimation(Self.transitionAnimation) { viewModel.keyTapped(key) }
+                    })
                         .padding(.top, keypadTopSpacing)
                         .padding(.horizontal, keypadHorizontalPadding)
                         .padding(.bottom, keypadBottomPadding)
