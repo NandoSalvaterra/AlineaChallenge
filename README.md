@@ -2,6 +2,13 @@
 
 iOS take-home challenge — investment amount entry screen built in SwiftUI.
 
+
+## Images
+
+<img width="563" height="1218" alt="IMG_0482" src="https://github.com/user-attachments/assets/058eba7a-bdd6-4ce8-9ad0-cbbc7d3dfd7a" />
+<img width="563" height="1218" alt="IMG_0481 2" src="https://github.com/user-attachments/assets/71991f89-30b2-4ba3-bb56-a8bacc629e04" />
+
+
 ---
 
 ## Requirements
