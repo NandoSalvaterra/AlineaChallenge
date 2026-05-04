@@ -3,21 +3,21 @@ import SwiftUI
 struct AmountDisplayView: View {
     let displayValue: String
     let isEmpty: Bool
-
+    
     @State private var cursorVisible = true
-
+    
     private let cursorWidth: CGFloat = 3
     private let cursorSpacing: CGFloat = 4
-
+    
     var body: some View {
         HStack(spacing: cursorSpacing) {
             Text(displayValue)
+                .embossed(isEmpty: isEmpty)
                 .amountDisplayStyle()
-                .foregroundStyle(isEmpty ? Color.placeholderText : Color.primaryText)
                 .lineLimit(1)
                 .minimumScaleFactor(0.3)
                 .accessibilityIdentifier(AccessibilityID.amountDisplay)
-
+            
             Rectangle()
                 .fill(Color.primaryText)
                 .frame(width: cursorWidth)
