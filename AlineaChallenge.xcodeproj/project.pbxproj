@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5B93E5102FA97392007F9F78 /* TestPlan.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 5B93E50F2FA97392007F9F78 /* TestPlan.xctestplan */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		5BAC05782FA81CD700E4DA03 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -25,11 +29,19 @@
 
 /* Begin PBXFileReference section */
 		5B6ABCB22FA41F1F001A24AA /* AlineaChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlineaChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B93E50F2FA97392007F9F78 /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
 		5BAC05742FA81CD700E4DA03 /* AlineaChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlineaChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BAC05832FA81D1E00E4DA03 /* AlineaChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlineaChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5B93E5122FA97440007F9F78 /* Exceptions for "AlineaChallenge" folder in "AlineaChallengeUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Sources/DesignSystem/AccessibilityID.swift,
+			);
+			target = 5BAC05822FA81D1E00E4DA03 /* AlineaChallengeUITests */;
+		};
 		5BAC04B22FA6793300E4DA03 /* Exceptions for "AlineaChallenge" folder in "AlineaChallenge" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -44,6 +56,7 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				5BAC04B22FA6793300E4DA03 /* Exceptions for "AlineaChallenge" folder in "AlineaChallenge" target */,
+				5B93E5122FA97440007F9F78 /* Exceptions for "AlineaChallenge" folder in "AlineaChallengeUITests" target */,
 			);
 			path = AlineaChallenge;
 			sourceTree = "<group>";
@@ -88,6 +101,7 @@
 		5B6ABCA92FA41F1E001A24AA = {
 			isa = PBXGroup;
 			children = (
+				5B93E50F2FA97392007F9F78 /* TestPlan.xctestplan */,
 				5B6ABCB42FA41F1F001A24AA /* AlineaChallenge */,
 				5BAC05752FA81CD700E4DA03 /* AlineaChallengeTests */,
 				5BAC05842FA81D1E00E4DA03 /* AlineaChallengeUITests */,
@@ -225,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B93E5102FA97392007F9F78 /* TestPlan.xctestplan in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

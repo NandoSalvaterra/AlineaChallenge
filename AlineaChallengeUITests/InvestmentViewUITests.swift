@@ -1,5 +1,4 @@
 import XCTest
-@testable import AlineaChallenge
 
 final class InvestmentViewUITests: XCTestCase {
     var app: XCUIApplication!
